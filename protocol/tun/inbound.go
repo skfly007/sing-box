@@ -257,7 +257,8 @@ func NewInbound(ctx context.Context, router adapter.Router, logger log.ContextLo
 		if err != nil {
 			return nil, E.Cause(err, "initialize auto-redirect")
 		}
-		if !C.IsAndroid {
+		if C.IsLinux {
+			// Linux auto-redirect uses socket marks to avoid redirect loops.
 			inbound.tunOptions.AutoRedirectMarkMode = true
 			err = networkManager.RegisterAutoRedirectOutputMark(inbound.tunOptions.AutoRedirectOutputMark)
 			if err != nil {
