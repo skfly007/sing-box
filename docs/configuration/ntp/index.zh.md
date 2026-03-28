@@ -1,6 +1,6 @@
 # NTP
 
-内建的 NTP 客户端服务。
+内建的 NTP（Network Time Protocol）客户端服务。
 
 如果启用，它将为像 TLS/Shadowsocks/VMess 这样的协议提供时间，这对于无法进行时间同步的环境很有用。
 

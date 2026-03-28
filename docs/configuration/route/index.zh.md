@@ -57,12 +57,12 @@ icon: material/alert-decagram
 
 ### 字段
 
-| 键         | 格式                    |
-|-----------|-----------------------|
+| 键        | 格式                  |
+| --------- | --------------------- |
 | `geoip`   | [GeoIP](./geoip/)     |
 | `geosite` | [Geosite](./geosite/) |
 
-#### rule
+#### rules
 
 一组 [路由规则](./rule/)    。
 
